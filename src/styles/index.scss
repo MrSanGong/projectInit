@@ -1,0 +1,124 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './element-variables.scss'; // 在此引入element的所有样式
+
+body {
+  height: 100%;
+  color: $color-text-main;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: $color-blue;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main {
+  min-height: 100%
+}
+
+//.app-container {
+//  @include relative;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  min-width: $contentMinWidth;
+//  height: calc(100vh - 50px);
+//  overflow-y: auto;
+//  .content-container {
+//    width: $contentMinWidth;
+//    padding: 0 20px;
+//    overflow-y: hidden;
+//  }
+//  .table-container {
+//    padding: 0 60px;
+//    width: 100%;
+//  }
+//}
+
+// 统一的表单包裹类
+.form-container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.svg-icon {
+  color: $color-text-sub;
+}
+
+// 单行输入框
+.common-input {
+  width: 250px!important;
+}
+
+// 可点击的提示
+.clickable-hint {
+  font-size: $hint-fsz;
+  color: $color-text-not-important;
+  cursor: pointer;
+  user-select: none;
+  &:hover, &:focus {
+    color: $color-primary;
+  }
+}
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";

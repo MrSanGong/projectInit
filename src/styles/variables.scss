@@ -1,0 +1,124 @@
+// 薪税宝主题
+$color-primary: #FF3B12;
+//sidebar
+$menuText:#666666;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#666; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#304156;
+$menuHover:#263445;
+
+$subMenuHover:#001528;
+
+$sideBarWidth: 180px;
+
+/*
+sidebar
+ */
+// 边栏背景
+$sidebarBg: #f8f8f8;
+// 子菜单背景
+$subItemBg: #fff;
+// 边栏字体色
+$sidebarColor: #666;
+// 边栏字体选中
+$sidebarColorSelected: $color-primary;
+// 边栏选项选中
+$sidebarBGSelected: $sidebarColorSelected;
+// 主选项背景
+$menuBg:#f8f8f8;
+// 主选项悬浮
+$menuHover: #fff;
+// 次选项背景
+$subMenuBg:#f8f8f8;
+// 次选项
+$subMenuHover:#f8f8f8;
+// 暂无消息颜色
+$noMsg: #ccc;
+
+/*
+主要页面
+ */
+$contentMinWidth: 1000px;
+$navBarHeight: 50px;
+
+// 特殊顶栏
+//$border-top-special-block: 2px solid $color-primary;
+$border-top-special-block: none;
+// 内页模块分割边界实线
+$border-content: 1px solid #e5e5e5;
+// 内页模块分割边界虚线
+$border-dashed: 1px dashed #ddd;
+// 顶部高度（banner与navbar）
+$top-navbar-height: 50px;
+
+// 表单输入框宽度
+$common-input-width: 220px;
+
+// 主要内容字大小
+$main-fsz: 14px;
+// 标题字大小
+$title-fsz: 16px;
+// 提示字大小
+$hint-fsz: 12px;
+// 大字中的小字，一般用于极度吸引注意力
+$minus-large-fsz: 16px;
+// 大字，一般用于极度吸引注意力
+$large-fsz: 18px;
+// 超大字，一般用于极度吸引注意力
+$extra-large-fsz: 20px;
+
+// 薪税宝主题
+$color-primary-sub: #f56c6c;
+
+// 红色
+$color-red: #f13b3a;
+// 绿色
+$color-green: #67C23A;
+// 饿了么蓝
+$color-blue: #409EFF;
+// 紫色
+$color-purple: #886cff;
+// 黄色
+$color-yellow: #ffa53a;
+// 金钱的颜色
+$color-money: #FF3600;
+// 主字色
+$color-text-main: #333;
+// 次字色
+$color-text-sub: #666;
+// 不重要
+$color-text-not-important: #999;
+
+/*
+渐变色
+*/
+$yellow-linear-color: linear-gradient(-90deg, rgba(242, 159, 60, 1) 0%, rgba(246, 192, 102, 1) 100%);
+$blue-linear-color: linear-gradient(-90deg, rgba(152, 175, 245, 1) 0%, rgba(169, 219, 236, 1) 100%);
+$purple-linear-color: linear-gradient(-90deg, rgba(179, 132, 249, 1) 0%, rgba(222, 153, 252, 1) 100%);
+$orange-linear-color: linear-gradient(-90deg, rgba(245, 108, 7, 1) 0%, rgba(252, 159, 108, 1) 100%);
+$green-linear-color: linear-gradient(-90deg,rgba(102,213,211,1) 0%,rgba(140,234,213,1) 100%);
+$pink-linear-color: linear-gradient(-90deg, rgba(255, 154, 158, 1) 0%, rgba(250, 208, 196, 1) 100%);
+$red-linear-color: linear-gradient(90deg, rgba(235, 108, 94, 1) 0%, rgba(220, 50, 32, 1) 100%);
+$orange-red-linear-color: linear-gradient(-90deg, rgba(255, 54, 0, 1) 0%, rgba(253, 119, 83, 1) 100%);
+
+// the :export directive is the magic sauce for webpack
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  colorPrimary: $color-primary;
+  colorRed: $color-red;
+  colorGreen: $color-green;
+  colorBlue: $color-blue;
+  colorPurple: $color-purple;
+  colorYellow: $color-yellow;
+  colorMoney: $color-money;
+  navBarHeight: $navBarHeight;
+  greenLinearColor: $green-linear-color;
+}
